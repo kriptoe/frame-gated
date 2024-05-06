@@ -5,25 +5,24 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'First Button',
+      label: 'Story time!',
     },
     {
-      action: 'tx',
-      label: 'Send Base Sepolia',
-      target: `${NEXT_PUBLIC_URL}/api/tx`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
+      action: 'link',
+      label: 'Link to Google',
+      target: 'https://www.google.com',
     },
     {
-      label: 'Dgenlotto',
-      action: 'post_redirect',                             // outbound link
+      label: 'Redirect to pictures',
+      action: 'post_redirect',
     },
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/hs.jpg`,    // image that is displayed in initial frame
+    src: `${NEXT_PUBLIC_URL}/park-3.png`,
     aspectRatio: '1:1',
   },
   input: {
-    text: 'Tell me a story',
+    text: 'Tell me a boat story',
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
