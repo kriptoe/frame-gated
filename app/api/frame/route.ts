@@ -11,6 +11,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   }
 
   const text = message.input || '';
+
+  
   let state = {
     page: 0,
   };
@@ -34,7 +36,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: `State: ${state?.page || 0}`,
+          label: `🌲☀️ ${text} 🌲🌲`,
         },
         {
           action: 'link',
