@@ -19,7 +19,7 @@ const frameMetadata = getFrameMetadata({
     },
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/park-3.png`,
+    src: `${NEXT_PUBLIC_URL}/hs.jpg`,    // image that is displayed in initial frame
     aspectRatio: '1:1',
   },
   input: {

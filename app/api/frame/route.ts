@@ -26,6 +26,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
    * Use this code to redirect to a different page
    */
   if (message?.button === 3) {
+    console.log('Redirecting to:', 'https://www.google.com/search?q=cute+dog+pictures&tbm=isch&source=lnms');
+    console.log('button number',  message?.button);    
     return NextResponse.redirect(
       'https://www.google.com/search?q=cute+dog+pictures&tbm=isch&source=lnms',
       { status: 302 },
