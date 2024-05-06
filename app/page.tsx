@@ -14,9 +14,8 @@ const frameMetadata = getFrameMetadata({
       postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
     },
     {
-      action: 'link',                             // outbound link
       label: 'Dgenlotto',
-      target: 'https://www.dgenlotto.com',
+      action: 'post_redirect',                             // outbound link
     },
   ],
   image: {
@@ -35,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'hypersolid',
     description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
+    images: [`${NEXT_PUBLIC_URL}/hs.jpg`],
   },
   other: {
     ...frameMetadata,
